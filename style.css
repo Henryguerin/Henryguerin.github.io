@@ -1,0 +1,287 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(223, 221, 221);
+
+}
+header {
+    font-family: "Raleway";
+    font-size: 60px;
+    font-weight:lighter;
+    margin-left: 5vw;
+    padding: 1vw;
+    display: block;
+    margin-top: 0vw;
+    color:rgb(255, 77, 0);
+    
+    
+}
+
+
+
+a {
+    color: black;
+    font-family:"Raleway";
+    text-decoration: none;
+    
+}
+
+a:hover{ 
+    color: rgb(255, 77, 0);
+    text-decoration: line-through black;
+
+}
+
+.topnav {
+    text-align: center;
+    display: flex;  
+    justify-content: space-between;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 0.5vw;
+    border-bottom-style:solid;
+    border-bottom-width: thin;
+    transition: 2s;
+    animation-name: slidein;
+
+}
+
+@keyframes slidein {
+            from {
+                margin-left: 0%;
+                width: 300%;
+            }
+            to {
+                margin-left: 100%;
+                width: 100%;
+            }
+    
+            
+}
+
+@media screen and (max-width: 600px) {
+    #home-head{
+        text-align: left;
+    }
+    
+    header {
+        font-size: 30px;
+        padding: 5vw;
+        text-align: center;
+    }
+    .topnav {
+        margin-top: 5vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .blog-text{
+        
+    }
+    
+    
+}
+
+.home-text {
+    margin-left: vw;
+    font-family: 'Courier New', Courier, monospace;
+    margin-right: 5vw;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+    font-size: small;
+}
+
+.about-me-text, .blog-text {
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 50vw;
+    margin-right: 5vw;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+    font-size: small;
+}
+
+
+
+h3 {
+    font-size: 30px;
+    text-align: right;
+    padding-top: 10vw;
+    margin-right: 5vw;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: black;
+    padding-bottom: 1vw;
+}
+
+input[type=text] {
+    padding: 2vw;
+    display:block;
+    background-color: white;
+    border: 1px;
+    border-radius: 8px;
+    width: 80vw;
+    align-items: center;
+    margin-bottom: 5vw;
+
+}
+
+@media screen and (max-width: 1000px){
+    input[type=text]{
+        width: 40vw;
+        margin-left: 40vw;
+        padding: 1vw;
+        margin-top: ;
+    }
+    #text-label{
+        margin-left: 40vw;   
+    }
+    .contact-detail{
+        margin-top: 5vw;
+    }
+    header{
+        font-size: 30px;
+        padding-top: 5vw;
+    }
+}
+
+@media screen and (max-width:600px) {
+    input[type=text]{
+        width: 80%;
+        margin-left: 8vw;
+        margin-right: 10vw;
+        padding: 1vw;
+        align-content: center;        
+}
+    #text-label{
+        margin-left: 8vw;
+    }
+    #button {
+        margin-right: 0vw;
+        ;
+    }
+}
+.contact-detail{
+    font-family: "Raleway";
+    font-weight: bolder;
+    margin-left: 5vw;
+}
+
+#comment {
+    background-color: white;
+    height: 40vw;
+
+}
+
+#button{
+    background-color: white;
+    border: 0px;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+    float: right;
+    margin-right: 13vw;
+    font-family: "Raleway";
+    font-weight: bolder;
+}
+
+#button:hover{
+    background-color: rgb(255, 77, 0);
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: vw;
+    padding-top: 2vw;
+    align-items: center;
+    align-content: center;
+    margin-right: vw;
+
+}
+
+@media screen and (min-width: 1001px){
+    .boat1 { 
+        width:50vw;
+        height:38vw;
+        padding: 1vw;
+    }
+    .boat2, .boat3 {
+        height:38vw;
+        padding: 1vw;
+    }
+    .flex-container {flex-wrap: nowrap;
+    padding:1v}
+    .run1{
+        width:22.23vw;
+        padding: 1vw;}
+    .run2, .run3{
+        width: 50vw;
+        padding: 1vw;}
+
+}
+
+@media screen and (max-width:1000px) {
+    .boat1 {width:65vw; height: auto;}
+    .boat2, .boat3 {
+        width: 30vw;}
+        .flex-container{
+            align-items: flex-start;
+            align-content: center;
+            justify-content: center;
+            margin-left: 5vw;
+            margin-right: 5vw;
+        }
+    .run1{
+        flex-direction: row;
+        width: 20vw;
+        padding: 2vw;
+        flex: 40%;
+        
+    }
+    .run2, .run3 {
+        width: 20vw;
+        padding:2vw;
+        flex:40% ;
+    }     
+    
+}
+
+
+
+@media screen and (max-width:600px) {
+    .boat1 {
+        width: 100%;
+        height: auto;
+        padding: 2vw;
+    }
+    .boat2, .boat3{
+        height: auto;
+        width: 100%;
+        padding: 2vw;
+    } 
+    .flex-container{
+        justify-content: center;
+    }
+    .about-me-text{
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .run1, .run2, .run3{
+        width: 100%;
+        padding: 2vw;
+    }
+}
+
+
+
+footer {
+    background-color: rgb(255, 77, 0);
+    padding: 2vw;
+    display: block;
+
+
+
+}
+
