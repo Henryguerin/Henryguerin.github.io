@@ -18,8 +18,6 @@ header {
     
 }
 
-
-
 a {
     color: black;
     font-family:"Raleway";
@@ -61,6 +59,12 @@ a:hover{
 }
 
 @media screen and (max-width: 600px) {
+    .blog-text{
+        margin-left: 0%;
+    }
+}
+
+@media screen and (max-width: 600px) {
     #home-head{
         text-align: left;
     }
@@ -76,14 +80,17 @@ a:hover{
         margin-right: 5vw;
     }
     .blog-text{
-        
+        margin-left: 5vw;
+        float: left;
     }
     
     
 }
 
+
+
 .home-text {
-    margin-left: vw;
+    margin-left: 50vw;
     font-family: 'Courier New', Courier, monospace;
     margin-right: 5vw;
     margin-bottom: 2vw;
@@ -93,14 +100,31 @@ a:hover{
 
 .about-me-text, .blog-text {
     font-family: 'Courier New', Courier, monospace;
-    margin-left: 50vw;
+    margin-left: 5vw;
     margin-right: 5vw;
     margin-bottom: 2vw;
     margin-top: 2vw;
     font-size: small;
 }
 
+@media screen and (min-width:1001px) {
+    .blog-text, .about-me-text{
+        margin-left: 50vw;
+    }
+}
 
+@media screen and (max-width:1000px) {
+    .blog-text{
+        margin-left: 35vw;
+}
+}
+@media screen and (max-width:600px) {
+    .blog-text {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+}
+    
 
 h3 {
     font-size: 30px;
@@ -121,8 +145,33 @@ input[type=text] {
     border-radius: 8px;
     width: 80vw;
     align-items: center;
-    margin-bottom: 5vw;
+    margin-bottom: 2vw;
 
+}
+.contact-detail{
+    font-family: "Raleway";
+    font-weight: bolder;
+    margin-left: 5vw;
+}
+
+#comment {
+    background-color: white;
+    height: 200px;
+
+}
+@media screen and (min-width: 1001px){
+    input[type=text]{ width: 400px;
+        margin-left: 50vw;
+        padding:1vw;
+        margin-top: vw;
+
+    }
+    #text-label{
+        margin-left:50vw;
+    }
+    #button{
+    float: none;
+    }
 }
 
 @media screen and (max-width: 1000px){
@@ -130,7 +179,7 @@ input[type=text] {
         width: 40vw;
         margin-left: 40vw;
         padding: 1vw;
-        margin-top: ;
+         
     }
     #text-label{
         margin-left: 40vw;   
@@ -159,17 +208,6 @@ input[type=text] {
         margin-right: 0vw;
         ;
     }
-}
-.contact-detail{
-    font-family: "Raleway";
-    font-weight: bolder;
-    margin-left: 5vw;
-}
-
-#comment {
-    background-color: white;
-    height: 40vw;
-
 }
 
 #button{
@@ -244,12 +282,8 @@ input[type=text] {
         width: 20vw;
         padding:2vw;
         flex:40% ;
-    }     
-    
+    }        
 }
-
-
-
 @media screen and (max-width:600px) {
     .boat1 {
         width: 100%;
@@ -274,14 +308,60 @@ input[type=text] {
     }
 }
 
-
-
 footer {
     background-color: rgb(255, 77, 0);
-    padding: 2vw;
-    display: block;
-
-
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    margin-top: auto;
+    bottom: 0%;
+    width: 100%;
+}
+i {
+    display: flex;
+    justify-content: center;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    background-color: rgb(255, 77, 0);
+    
 
 }
 
+.footer-absolute{
+    position: absolute;
+}
+
+@media screen and (min-width:1001px){
+    footer{
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+    .home-text{
+        margin-left: 5vw;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .home-text{
+        margin-left: 5vw;
+        margin-top: 15vw;
+    }
+}
+.blog-image{
+    width: 90%;
+    height: auto;
+    margin-left: 5vw;
+    margin-right: 0%;
+}
+@media screen and (min-width: 1001px){
+    .blog-image{
+        width: 30%;
+        float: left; 
+        padding: 5vw
+          
+    }
+    .blog-text{
+        display: inline;
+        margin-left: 50%;
+    }
+    }
+    
