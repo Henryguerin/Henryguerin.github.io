@@ -5,6 +5,7 @@
     background-color: rgb(223, 221, 221);
 
 }
+/* Heading text styling continued throughout document */
 header {
     font-family: "Raleway";
     font-size: 60px;
@@ -14,23 +15,21 @@ header {
     display: block;
     margin-top: 0vw;
     color:rgb(255, 77, 0);
-    
-    
 }
-
+/* Navigation bar basic styling - continued throughout document */
 a {
     color: black;
     font-family:"Raleway";
     text-decoration: none;
     
 }
-
-a:hover{ 
+/* navigation bar hover styling */
+.hover-top:hover{ 
     color: rgb(255, 77, 0);
     text-decoration: line-through black;
 
 }
-
+/* navigation bar styling to spread the four links evenly across top of page */
 .topnav {
     text-align: center;
     display: flex;  
@@ -40,29 +39,11 @@ a:hover{
     margin-top: 0.5vw;
     border-bottom-style:solid;
     border-bottom-width: thin;
-    transition: 2s;
-    animation-name: slidein;
-
 }
 
-@keyframes slidein {
-            from {
-                margin-left: 0%;
-                width: 300%;
-            }
-            to {
-                margin-left: 100%;
-                width: 100%;
-            }
-    
-            
-}
-
-@media screen and (max-width: 600px) {
-    .blog-text{
-        margin-left: 0%;
-    }
-}
+/* media screen for headings on small screen sizes - moved to centre of page. 
+also topnav added spacing from sides to allow for more accurate tapping on touch screen.
+changed text to be in the centre of the page  */
 
 @media screen and (max-width: 600px) {
     #home-head{
@@ -82,12 +63,10 @@ a:hover{
     .blog-text{
         margin-left: 5vw;
         float: left;
-    }
-    
-    
+    }    
 }
 
-
+/* Basic styling of text on home page, about me page and blog page.  */
 
 .home-text {
     margin-left: 50vw;
@@ -107,6 +86,8 @@ a:hover{
     font-size: small;
 }
 
+/* Media screens for text at varying sizes using margins to move text positioning */
+
 @media screen and (min-width:1001px) {
     .blog-text, .about-me-text{
         margin-left: 50vw;
@@ -125,7 +106,7 @@ a:hover{
     }
 }
     
-
+/* styling of blog subheadings */
 h3 {
     font-size: 30px;
     text-align: right;
@@ -136,7 +117,7 @@ h3 {
     border-bottom-color: black;
     padding-bottom: 1vw;
 }
-
+/* contacts page styling - inputs and contact details */
 input[type=text] {
     padding: 2vw;
     display:block;
@@ -153,12 +134,13 @@ input[type=text] {
     font-weight: bolder;
     margin-left: 5vw;
 }
-
+/* Larger comment box on conact page styling */
 #comment {
     background-color: white;
     height: 200px;
 
 }
+/* media screens for contact page adjustments */
 @media screen and (min-width: 1001px){
     input[type=text]{ width: 400px;
         margin-left: 50vw;
@@ -209,7 +191,7 @@ input[type=text] {
         ;
     }
 }
-
+/* submit button on contact page styling and positioning - followed by hover styling */
 #button{
     background-color: white;
     border: 0px;
@@ -227,6 +209,7 @@ input[type=text] {
     color: white;
 }
 
+/* styling of images on the about me page */
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -238,7 +221,7 @@ input[type=text] {
     margin-right: vw;
 
 }
-
+/* styling of media screens for images on about me page */
 @media screen and (min-width: 1001px){
     .boat1 { 
         width:50vw;
@@ -325,7 +308,7 @@ i {
     
 
 }
-
+/* footer styling with media screens */
 .footer-absolute{
     position: absolute;
 }
@@ -355,13 +338,16 @@ i {
 @media screen and (min-width: 1001px){
     .blog-image{
         width: 30%;
-        float: left; 
-        padding: 5vw
+        vertical-align: top; 
+        padding: 5vw;
+        display: inline-block;
           
     }
     .blog-text{
-        display: inline;
+        display: inline-block;
         margin-left: 50%;
     }
     }
+
+
     
