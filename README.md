@@ -17,8 +17,3 @@ The website features a typographic home page outlining basic information includi
 
 ![sitemap](/Desktop/Screen Shot 2022-06-13 at 3.54.33 pm)
 
-- **Screenshots**
-
-- **Target Audience**
-The target audience for the webpage
-    Techstack
